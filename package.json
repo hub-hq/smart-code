@@ -1,0 +1,62 @@
+{
+  "name": "smart-code-web",
+  "version": "1.0.0",
+  "description": "Smart Code",
+  "author": "analuciabolico",
+  "license": "MIT",
+  "homepage": "https://github.com/analuciabolico/smart-code#readme",
+  "keywords": [
+    "typescript",
+    "smartcode",
+    "smart-code",
+    "arduino"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/analuciabolico/smart-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/analuciabolico/smart-code/issues"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write . '**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.7",
+    "formik": "^2.2.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.4.1",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-router-dom": "^5.3.3",
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
