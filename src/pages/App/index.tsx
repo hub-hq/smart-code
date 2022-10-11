@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { useRoutes } from 'react-router';
+import { RouteObject, useRoutes } from 'react-router';
 import Loadable from 'src/components/Loadable';
 import Theme from 'src/components/Theme';
 
-const HomePage = Loadable(React.lazy(() => import('src/pages/Code')));
+const HomePage = Loadable(React.lazy(() => import('src/pages/Home')));
 const CodePage = Loadable(React.lazy(() => import('src/pages/Code')));
 
-const MainRoutes = {
+const MainRoutes: RouteObject = {
   path: '/',
   element: <HomePage />,
   children: [

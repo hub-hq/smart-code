@@ -1,10 +1,9 @@
-{
+ {
   "name": "smart-code-web",
   "version": "1.0.0",
   "description": "Smart Code",
   "author": "analuciabolico",
   "license": "MIT",
-  "homepage": "https://github.com/analuciabolico/smart-code#readme",
   "keywords": [
     "typescript",
     "smartcode",

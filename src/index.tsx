@@ -9,7 +9,7 @@ const root = createRoot(rootElement!);
 const app = (
   <React.StrictMode>
     <React.Suspense fallback={<div>Carregando...</div>}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
       </BrowserRouter>
     </React.Suspense>

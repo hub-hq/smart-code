@@ -1,5 +1,5 @@
-import { Bff, Delete, Get, Item, List, Post } from '@base/controllers/bff';
-import { Block } from '@base/models/dtos';
+import { Bff, Get, Item, List } from '@controllers/bff';
+import { Block } from '@models/dtos';
 
 export const ENDPOINTS = {
   BLOCKS: '/blocks',
@@ -8,15 +8,11 @@ export const ENDPOINTS = {
   FIXED: '/blocks/fixed',
 };
 
-export default class Controller {
+export default class CodeController {
   private GET: Get;
-  private POST: Post;
-  private DELETE: Delete;
 
   constructor(service: Bff) {
     this.GET = service.get;
-    this.POST = service.post;
-    this.DELETE = service.get;
   }
 
   getBlocks(): List<Block> {
