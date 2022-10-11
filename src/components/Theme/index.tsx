@@ -1,10 +1,7 @@
-import * as React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
 import { CssBaseline } from '@mui/material';
-
-// import Home from '../../pages/Home';
-import Home from '@pages/Home';
+import { red } from '@mui/material/colors';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import * as React from 'react';
 
 // A custom theme for this app
 const theme = createTheme({
@@ -21,11 +18,15 @@ const theme = createTheme({
   },
 });
 
-const Theme: React.FC = () => {
+type Props = {
+  children: React.ReactNode;
+};
+
+const Theme: React.FC<Props> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Home />
+      {children}
     </ThemeProvider>
   );
 };
