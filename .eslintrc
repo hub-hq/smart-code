@@ -1,0 +1,17 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "jsx-a11y"
+    ],
+    "extends": [
+        "react-app",
+        "react-app/jest",
+        "eslint:recommended",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "rules": {
+        "react-hooks/exhaustive-deps": "warn",
+    }
+}
